@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply font-poller;
+        @apply bg-fixed;
+    }
+}
+
+@theme{
+    --color-grey-color: rgba(60, 69, 67, 0.6);
+    --color-base-color: #eedb00;
+    --font-poller: serif;
+    --color-e-color: rgb(109, 40, 217);
+    --shadow-hero: 10px 10px rgba(60, 69, 67, 0.6);
+}
