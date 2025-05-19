@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import "tailwindcss";
 
 @layer base {
     body {
-        @apply font-poller;
+        @apply font-sans bg-fixed;
         @apply bg-fixed;
     }
 }

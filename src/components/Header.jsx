@@ -11,12 +11,12 @@ const Header = () => {
             <div className="flex items-center">
                 <Link to="/" className="flex items-center">
                     <img src={logo} alt="Logo" className="h-20 w-20 mr-6"/>
-                    <h1 className="text-6xl">eMarket</h1>
+                    <h1 className="text-4xl font-bold text-purple-700">eMarket</h1>
             </Link>
         </div>
     <nav className="flex items-center space-x-6">
-                <Link to="/" className="text-4xl">Каталог</Link>
-                <Link to="/cart" className="text-4xl">Корзина ({totalCount})</Link>
+                <Link to="/" className="text-2xl font-bold text-400">Каталог</Link>
+                <Link to="/cart" className="text-2xl font-bold text-400">Корзина ({totalCount})</Link>
             </nav>
         </header>
     );

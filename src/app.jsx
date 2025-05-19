@@ -24,7 +24,6 @@ const App = () => {
                         <Route path="/admin/add-product" element={<AddProductPage />} />
                     </Routes>
                 </main>
-
                 <Footer />
             </div>
         </Router>

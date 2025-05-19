@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import CartItem from '../components/CartItem';
 import { useNavigate } from 'react-router-dom';
-import { changeQuantity, removeFromCart } from '../store/cartSlice'; // <== добавь импорт
+import { changeQuantity, removeFromCart } from '../store/cartSlice';
 
 const CartPage = () => {
     const cart = useSelector(state => state.cart.items);
@@ -32,7 +32,7 @@ const CartPage = () => {
                     <div className="mt-4 text-right">
                         <button
                             onClick={() => navigate('/checkout')}
-                            className="bg-green-600 text-white px-4 py-2 rounded"
+                            className="bg-purple-600 text-white px-6 py-2 rounded hover:bg-purple-700 transition"
                         >
                             Оформить заказ
                         </button>
