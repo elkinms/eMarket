@@ -5,8 +5,8 @@ import HomePage from './pages/HomePage';
 import ProductPage from './pages/ProductPage.jsx';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage.jsx';
-import AdminPage from './pages/AdminPage'; //
-import AddProductPage from './pages/AddProductPage'; // To add a product. Doesn't work
+import AdminPage from './pages/AdminPage'; // TODO
+import AddProductPage from './pages/AddProductPage'; // TODO To add a product.
 
 const App = () => {
     return (

@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import cartReducer from './cartSlice';
 
-// Загружаем сохранённое состояние корзины
+// Load Local Storage state
 const loadFromLocalStorage = () => {
     try {
         const data = localStorage.getItem('cart');
@@ -15,7 +15,7 @@ const loadFromLocalStorage = () => {
     }
 };
 
-// Сохраняем состояние корзины
+// Save State of storage
 const saveToLocalStorage = (state) => {
     try {
         const serialized = JSON.stringify(state.cart);
@@ -29,10 +29,10 @@ const store = configureStore({
     reducer: {
         cart: cartReducer
     },
-    preloadedState: loadFromLocalStorage(), // 🟡 <- добавлено
+    preloadedState: loadFromLocalStorage(),
 });
 
-// Подписка на изменения store — сохраняем в localStorage
+// Subscribe to change in store. Save to localStorage.
 store.subscribe(() => {
     saveToLocalStorage(store.getState());
 });

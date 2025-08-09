@@ -8,7 +8,6 @@ const Header = () => {
 
     return (
         <header className="flex flex-wrap items-center justify-between gap-4 p-4 shadow-md bg-white">
-            {/* Логотип + название */}
             <div className="flex items-center gap-2">
                 <img src="/emarket_logo.png" alt="Logo" className="h-8 w-8" />
                 <span className="text-2xl font-bold text-purple-700 whitespace-nowrap">eMarket</span>
